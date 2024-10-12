@@ -28,7 +28,7 @@ let cityName = "";
 
 // ! Fetch data from API
 async function getData(method, query) {
-    const response = await fetch(`http://api.weatherapi.com/v1/${method}.json?key=b7f5b25b7cd24e8293b180332241010&q=${query}`);
+    const response = await fetch(`https://api.weatherapi.com/v1/${method}.json?key=b7f5b25b7cd24e8293b180332241010&q=${query}`);
     return await response.json();
 }
 
@@ -91,7 +91,7 @@ function getFormattedDates(data) {
 
 // ! Get weather for the next 2 days
 async function getNextDaysWeather(city, dayIndex, maxDegreeElem, minDegreeElem, customElem, icon) {
-    const response = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=b7f5b25b7cd24e8293b180332241010&q=${city}&days=${dayIndex + 1}`);
+    const response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=b7f5b25b7cd24e8293b180332241010&q=${city}&days=${dayIndex + 1}`);
     const forecastData = await response.json();
 
     if (forecastData.forecast) {
