@@ -1,0 +1,147 @@
+/* ^ ================ variables ================= */
+:root {
+    --main-color: #1e202b;
+    --sec-color: #323544;
+    --ter-color: #009ad8;
+    --text-color: #bfc1c8;
+    --main-font: "Roboto", sans-serif;
+}
+
+body {
+    font-family: var(--main-font);
+}
+
+/* ^ ================ Nav Styles ================= */
+.navbar {
+    padding: 15px 0px;
+}
+
+.logo {
+    width: 70px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.navbar span {
+    font-size: 10px;
+}
+
+.nav-link {
+    color: #fff;
+    margin: 0px;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    padding: 1px 20px;
+
+}
+
+.navbar-nav .nav-link.active,
+.nav-link:hover {
+    border-color: var(--ter-color);
+    color: var(--ter-color);
+    padding: 1px 20px;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* ^ ================ Banner section Styles ================= */
+.banner {
+    background-image: url(../imgs/banner.png);
+    background-size: cover;
+    min-height: 350px;
+    padding: 70px 0px;
+}
+
+.searchInput {
+    outline: 0;
+}
+
+.findBtn {
+    background-color: var(--ter-color);
+    padding: 10px 35px;
+    right: 8px;
+}
+
+/* ^ ================ Hero section Styles ================= */
+
+.hero {
+    background-color: var(--main-color);
+    min-height: 300px;
+}
+
+.hero .container {
+    transform: translateY(-150px);
+}
+
+.icon span,
+.tHeader div {
+    font-size: 14px;
+}
+
+.tHeader {
+    background-color: #2a2d3c;
+}
+
+.forecast-content {
+    min-height: 360px;
+}
+
+small {
+    font-size: 18px;
+}
+
+.forecast-container:nth-child(2) {
+    background-color: #262936;
+}
+
+/* ^ ================ Footer Section Styles ================= */
+.footer {
+    background-color: #262936;
+    padding: 50px;
+}
+
+.social-links li {
+    width: 40px;
+    background-color: var(--main-color);
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    transition: background-color 400ms;
+}
+
+.social-links i {
+    color: #009ad8;
+    transition: color 400ms;
+}
+
+.social-links li:hover {
+    background-color: #009ad8;
+}
+
+.social-links li:hover i {
+    color: #fff;
+}
+
+/* ^ ================ Helper Utilities ================= */
+.bg-main {
+    background-color: var(--main-color);
+}
+
+.bg-sec {
+    background-color: var(--sec-color);
+}
+
+.color-text {
+    color: var(--text-color);
+}
+
+.color-ter {
+    color: var(--ter-color);
+}
